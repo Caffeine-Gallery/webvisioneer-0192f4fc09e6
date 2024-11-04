@@ -1,0 +1,8 @@
+type Result = 
+ variant {
+   err: text;
+   ok: text;
+ };
+service : {
+  processImage: (vec nat8) -> (Result);
+}
